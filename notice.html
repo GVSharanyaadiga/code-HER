@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMVITM Digital Noticeboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header with Logo and College Name -->
+    <header>
+        <div class="header-container">
+            <img src="https://i.ibb.co/MDprkm7R/clg-logo.jpg" alt="College Logo" class="logo">
+            <h1>Shri Madhwa Vadiraja Institute of Technology and Management</h1>
+            <button onclick="openLoginModal()" class="login-btn">Login</button>
+        </div>
+    </header>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLoginModal()">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter Username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter Password" required>
+
+                <button type="submit">Login</button>
+            </form>
+            <p id="errorMessage"></p>
+        </div>
+    </div>
+
+    <!-- Notices Section -->
+    <section id="notices">
+        <h2>Latest Notices</h2>
+        <div class="notice-container">
+
+            <!-- Sample Notices -->
+            <div class="notice priority-high">
+                <h3>⚠️ Urgent: Exam Timetable Released!</h3>
+                <p>The final semester examination timetable has been published. Please check the exam portal for details.</p>
+                <span class="date">March 14, 2025</span>
+            </div>
+
+            <div class="notice priority-medium">
+                <h3>📢 Placement Drive - Infosys</h3>
+                <p>Infosys is conducting a placement drive for final-year students on March 20, 2025. Register before March 18.</p>
+                <span class="date">March 10, 2025</span>
+            </div>
+
+            <div class="notice priority-low">
+                <h3>🎉 Annual Cultural Fest Registration Open</h3>
+                <p>Register for the cultural fest happening on April 5, 2025. Participate in various events and win exciting prizes!</p>
+                <span class="date">March 8, 2025</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 SMVITM Digital Noticeboard</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
